@@ -1,0 +1,12 @@
+capsule-info {
+  display-name (주변약국검색)
+  developer-name (cattowersoft)
+  dispatch-name(약국검색)
+  icon-asset (/images/icon.png)
+  description (주변약국검색)
+  website-url (https://example.com/)
+  terms-url (https://example.com/terms-of-use/)
+  search-keywords {
+    keyword (약국)    
+  }
+}

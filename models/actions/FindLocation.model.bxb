@@ -1,0 +1,28 @@
+  action (FindLocation) {
+  description (위치를 찾기위해 서버에 요청하는 액션)
+  collect {
+    input (myPos) {
+      min (Required) max(One)
+      type (geo.GeoPoint)
+
+      default-init {
+        if ($user.currentLocation.$exists) {
+          intent {
+            goal: geo.GeoPoint
+            value-set: geo.CurrentLocation { $expr ($user.currentLocation) }
+          }
+        }
+      }
+    }
+  }
+  type(Search)
+  output (Results) {
+    on-empty{
+      halt{
+        dialog{
+          template ("근처에서 찾을 수 없습니다.")
+        }
+      }
+    }
+  }
+}

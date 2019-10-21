@@ -1,0 +1,27 @@
+result-view {
+  match: Results(result) {
+    from-output: FindLocation
+  }
+
+  message {
+    template ("검색결과입니더")
+  }
+
+  render {
+    list-of (result) {
+      where-each (item) {
+        cell-card {
+          slot2 {
+            content{
+              primary("#{value(item.name)}")
+              secondary("#{value(item.phonenumber)}")
+            }
+          }
+          slot3 {
+            label("#{value(item.distance)}m")
+          }
+        }
+      }
+    }
+  }
+}

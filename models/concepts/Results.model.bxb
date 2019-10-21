@@ -1,0 +1,15 @@
+structure (Results) {
+  description (장소리스트)
+  property (name) {
+    type (Name)
+    min (Optional) max (One)
+  }
+  property (distance) {
+    type (Distance)
+    min (Optional) max (One)
+  }
+  property (phonenumber) {
+    type (Phonenumber)
+    min (Optional) max (One)
+  }
+}

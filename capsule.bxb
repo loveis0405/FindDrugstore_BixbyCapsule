@@ -1,0 +1,22 @@
+capsule {
+  id (cattowersoft.drugstore)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-kR)
+  }
+  capsule-imports {
+    import (viv.geo) {
+      as (geo)
+      version (9.21.0)
+    }
+  }
+  permissions {
+    user-profile-access
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+}
