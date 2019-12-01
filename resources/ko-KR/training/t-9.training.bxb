@@ -1,0 +1,5 @@
+train (t-9fufz9gduysmgham4ff1san40) {
+  utterance ([g:FindLocation] 약국 찾아줄래)
+  plan (Y2BmkEtOLCnJL08tKs5PK9FLKSpNLy7JL0rVC0otLs0pKWZQxiHvlpmX4pMPlMzMz2MQKMss00tPzddzT80PyM/MK2FgYmAEYgYgycjAAKMB)
+  last-modified (1571710889283)
+}
